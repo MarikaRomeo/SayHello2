@@ -6,20 +6,20 @@ namespace HelloApp
     {
         static void Main(string[] args)
         {
-            // Prompt per l'utente 
+            // Prompt for the user
             Console.Write("Ange ditt namn: ");
             string name = Console.ReadLine() ?? "";
 
-            // Chiamata al metodo
+            // Call to methods
             SayHello(name);
         }
 
-        // Metodo che stampa  saluto
+        // Method that print
         static void SayHello(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                Console.WriteLine("Hej! Trevligt att träffas."); // saluto generico se niente inserito
+                Console.WriteLine("Hej! Trevligt att träffas."); // what to print if no name shows
             }
             else
             {
